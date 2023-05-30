@@ -6,7 +6,7 @@ A docker container using Amazon Linux 2022 with Ansible installed for playbook a
 
 ## Tags
 
-  - 'latest'  : Python 2.7.x and the latest stable version of Ansible.
+  - 'latest'  : Python 3.9.x and the latest stable version of Ansible.
 
 ## How To Build
 
@@ -24,7 +24,7 @@ To build this docker container you can do the following.
 
   - Install Docker Engine, see [here](https://docs.docker.com/engine/install/) for details.
   - To create a containter from the image you created in the `How To Build` section run the command.
-    - `$ docker run --detach --privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:ro amazonlinux2022-ansible:latest`
+    - `$ docker run --detach --privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:rw --cgroupns=host amazonlinux2022-ansible:latest`
   - To confirm Ansible is working within the container run the command.
     - `$ docker exec --tty <CONTAINER ID> env TERM=xterm ansible --version`
 
