@@ -1,5 +1,9 @@
 # Amazon Linux 2022 Docker Image for Ansible Testing
 
+DEPRECATED - Amazon Linux 2022 has been renamed to Amazon Linux 2023. Please see the below.
+
+  - [Amazon Linux 2023](https://github.com/glillico/docker-amazonlinux2023-ansible)
+
 [![latest](https://github.com/glillico/docker-amazonlinux2022-ansible/workflows/latest/badge.svg)](https://github.com/glillico/docker-amazonlinux2022-ansible/actions?query=workflow%3Alatest)
 
 A docker container using Amazon Linux 2022 with Ansible installed for playbook and role testing.
